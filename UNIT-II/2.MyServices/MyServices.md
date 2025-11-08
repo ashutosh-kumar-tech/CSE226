@@ -98,8 +98,7 @@ android:name="android.permission.POST_NOTIFICATIONS" />
 ### Step 1: Create a Background Service Class
 
 Create a new class that extends `Service` and overrides the necessary methods. For a background
-service, you do not need to display a notification. Here's an example: [**`BackgroundService.kt`
-**](./app/src/main/java/com/example/myservices/services/BackgroundService.kt)
+service, you do not need to display a notification. Here's an example: [**`BackgroundService.kt`**](./app/src/main/java/com/example/myservices/services/BackgroundService.kt)
 
 Since Android 8.0 (Oreo), background services have limitations on running in the background. To
 overcome these limitations, you can use a `JobIntentService` or a `WorkManager`.
@@ -138,8 +137,7 @@ We will create a simple background service that logs a message every 5 seconds.
 
 Create a new class that extends `Service` and overrides the necessary methods. For a bound service,
 you need to implement the `onBind()` method to return an `IBinder` interface for communication
-between the service and the client. Here's an example: [**`BoundService.kt`
-**](./app/src/main/java/com/example/myservices/services/BoundService.kt)
+between the service and the client. Here's an example: [**`BoundService.kt`**](./app/src/main/java/com/example/myservices/services/BoundService.kt)
 
 We will create a simple bound service that generates a random number.
 
