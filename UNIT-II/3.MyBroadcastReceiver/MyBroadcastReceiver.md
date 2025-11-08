@@ -78,9 +78,7 @@ class MyBroadcastReceiver : BroadcastReceiver() {
 ### Step 1: Create a Broadcast Receiver Class
 
 Create a new class that extends `BroadcastReceiver` and overrides the `onReceive()` method. This
-method is called when the receiver receives a broadcast message. Here's an example: [*
-*`ModeChangeReceiver.kt`
-**](./app/src/main/java/com/example/mybroadcastreceiver/ModeChangeReceiver.kt)
+method is called when the receiver receives a broadcast message. Here's an example: [**`ModeChangeReceiver.kt`**](./app/src/main/java/com/example/mybroadcastreceiver/ModeChangeReceiver.kt)
 
 - Implement the `onReceive()` method to handle the broadcast message. You can check the action of
   the intent to determine the type of broadcast received.
@@ -145,8 +143,7 @@ you can still use this broadcast for dynamic registration.
   If the broadcast is not being triggered as expected, you can manually check the airplane mode
   state using the `Settings.Global.AIRPLANE_MODE_ON` content provider
 
-You can see the complete implementation in the [**`MainActivity.kt`
-**](./app/src/main/java/com/example/mybroadcastreceiver/MainActivity.kt) file.
+You can see the complete implementation in the [**`MainActivity.kt`**](./app/src/main/java/com/example/mybroadcastreceiver/MainActivity.kt) file.
 
 #### Note:
 
@@ -163,8 +160,7 @@ Make sure to add the required permissions in the manifest file.
 - You can check the action of the intent to determine the type of broadcast received and perform the
   necessary actions accordingly.
 
-You can see the complete implementation in the [**`ModeChangeReceiver.kt`
-**](./app/src/main/java/com/example/mybroadcastreceiver/ModeChangeReceiver.kt) file.
+You can see the complete implementation in the [**`ModeChangeReceiver.kt`**](./app/src/main/java/com/example/mybroadcastreceiver/ModeChangeReceiver.kt) file.
 
 ### Step 4: Perform Actions based on Broadcast
 
@@ -172,8 +168,7 @@ Based on the broadcast message received, you can perform different actions in yo
 you can display a toast message, update the UI, start a service, etc. We have used broadcast
 reciever to update the UI in this example.
 
-You can see the complete implementation in the [**`MainActivity.kt`
-**](./app/src/main/java/com/example/mybroadcastreceiver/MainActivity.kt) file.
+You can see the complete implementation in the [**`MainActivity.kt`**](./app/src/main/java/com/example/mybroadcastreceiver/MainActivity.kt) file.
 
 ### Step 5: Use `ConnectivityManager.NetworkCallback` for Internet Connectivity
 
@@ -204,8 +199,7 @@ override fun onDestroy() {
 }
 ```
 
-You can see the implementation in the [**`MainActivity.kt`
-**](./app/src/main/java/com/example/mybroadcastreceiver/MainActivity.kt) file.
+You can see the implementation in the [**`MainActivity.kt`**](./app/src/main/java/com/example/mybroadcastreceiver/MainActivity.kt) file.
 
 ### AND ALL SET!!!
 
