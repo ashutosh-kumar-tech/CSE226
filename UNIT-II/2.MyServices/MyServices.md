@@ -90,8 +90,7 @@ android:name="android.permission.POST_NOTIFICATIONS" />
 ### Step 3: Start the Foreground Service
 
 - If you are targeting Android 13 (Tiramisu) or higher, you need to request the `POST_NOTIFICATIONS`
-  permission at runtime. This is done in the activity that starts the service. [**`MainAcitivity.kt`
-  **](./app/src/main/java/com/example/myservices/MainActivity.kt)
+  permission at runtime. This is done in the activity that starts the service. [**`MainAcitivity.kt`**](./app/src/main/java/com/example/myservices/MainActivity.kt)
 - Start the service from an activity using `startService()` and pass the required data as an intent.
 - You can stop the service using `stopService()`.
 
