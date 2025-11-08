@@ -45,8 +45,7 @@ playing music, downloading files, or fetching data from a server.
 ### Step 1: Create a Foreground Service Class
 
 Create a new class that extends `Service` and overrides the necessary methods. For a foreground
-service, you need to display a notification to the user. Here's an example: [**`MusicService.kt`
-**](./app/src/main/java/com/example/myservices/services/MusicService.kt)
+service, you need to display a notification to the user. Here's an example: [**`MusicService.kt`**](./app/src/main/java/com/example/myservices/services/MusicService.kt)
 
 - Store all the constants required for the service in the companion object.
 
